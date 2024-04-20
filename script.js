@@ -23,3 +23,28 @@ function multa(){
         let resultado2 = document.getElementById('resultado2').innerHTML ="Está dentro do limite de velocidade"
     }
 }
+
+function cargo(){
+    let trab = document.getElementById('trab')
+    let salMinimo = 3000
+    let resultado3 = document.getElementById('resultado3').innerHTML ="Seu salário"
+
+    switch (trab){
+        case 'jr':
+            resultado3.innerHTML ="Seu salário é de: R$" + salMinimo
+            break
+        case 'pleno':
+            resultado3 = document.getElementById('resultado3').innerHTML ="Seu salário é de: R$" + salMinimo*2
+            break
+        case 'senior':
+            resultado3 = document.getElementById('resultado3').innerHTML ="Seu salário é de: R$" + salMinimo*3
+            break
+        case 'techlead':
+            resultado3 = document.getElementById('resultado3').innerHTML ="Seu salário é de: R$" + salMinimo*4
+            break
+        case 'diretor':
+            resultado3 = document.getElementById('resultado3').innerHTML ="Seu salário é de: R$" + salMinimo*5
+            break
+        
+    }
+}
